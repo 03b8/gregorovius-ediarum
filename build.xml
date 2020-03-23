@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xdb="http://exist-db.org/ant" xmlns:if="ant:if" name="ediarum-framework">
+    <property name="build.dir" value="build"/>
+    <property file="project.properties"/>
+    <property file="build.properties"/>
+    <property name="project.path" value="/db/projects/${project.name}"/>
+    <property name="project.path" value="/db/projects/${project.name}"/>
+    <property name="project.version" value="v${project.version.major}-${project.version.minor}-${project.version.patch}-${project.version.build}"/>
+
+    <target name="increase-build" description="Increase build number">
+        <propertyfile file="build.properties">
+            <entry key="project.version.build" type="int" operation="+" value="1" pattern="0"/>
+        </propertyfile>
+    </target>
+
+    <target name="increase-patch" description="Increase patch number">
+        <propertyfile file="build.properties">
+            <entry key="project.version.patch" type="int" operation="+" value="1" pattern="0"/>
+        </propertyfile>
+    </target>
+
+    <target name="increase-minor" description="Increase minor number">
+        <propertyfile file="build.properties">
+            <entry key="project.version.minor" type="int" operation="+" value="1" pattern="0"/>
+            <entry key="project.version.patch" type="int" value="0" pattern="0"/>
+        </propertyfile>
+    </target>
+
+    <target name="increase-major" description="Increase major number">
+        <propertyfile file="build.properties">
+            <entry key="project.version.major" type="int" operation="+" value="1" pattern="0"/>
+            <entry key="project.version.minor" type="int" value="0" pattern="0"/>
+            <entry key="project.version.patch" type="int" value="0" pattern="0"/>
+        </propertyfile>
+    </target>
+
+    <target name="show-version" description="Echo the version number">
+        <echo message="Version: ${project.version}"/>
+    </target>
+
+    <target name="zip-addon" depends="show-version, increase-build" description="Build an oxygen addon package">
+        <echo message="zip-addon: Starting.."/>
+        <mkdir dir="${build.dir}"/>
+        <zip destfile="${build.dir}/${project.name}_v${project.version.major}-${project.version.minor}-${project.version.patch}.zip">
+            <zipfileset dir="oxygen_addon" prefix="${project.name}"/>
+        </zip>
+        <echo message="zip-addon: zip file written to ${build.dir}/${project.name}_v${project.version.major}-${project.version.minor}-${project.version.patch}.zip"/>
+    </target>
+
+    <path id="classpath.core">
+        <fileset dir="${exist.dir}/lib/core">
+            <include name="*.jar"/>
+        </fileset>
+        <pathelement path="${exist.dir}/exist.jar"/>
+        <pathelement path="${exist.dir}/exist-optional.jar"/>
+    </path>
+    <typedef resource="org/exist/ant/antlib.xml" uri="http://exist-db.org/ant">
+        <classpath refid="classpath.core"/>
+    </typedef>
+
+    <target name="update-update-xml" description="Update the update.xml with current version number">
+        <delete>
+            <fileset dir="">
+                <include name="update.xml"/>
+            </fileset>
+        </delete>
+        <copy todir=".">
+            <fileset dir="">
+                <include name="update.xml.ant"/>
+            </fileset>
+            <globmapper from="*.ant" to="*"/>
+            <filterset>
+                <filter token="ZIPFILE" value="${project.name}_v${project.version.major}-${project.version.minor}-${project.version.patch}.zip"/>
+                <filter token="VERSION" value="${project.version.major}.${project.version.minor}.${project.version.patch}"/>
+                <filter token="PROJECTNAME" value="${project.name}"/>
+            </filterset>
+        </copy>
+    </target>
+
+    <target name="publish-addon" depends="update-update-xml" description="Publish current addon">
+        <input message="Please enter password:" addproperty="ssh.pass">
+            <handler type="secure"/>
+        </input>
+        <echo message="publish-addon: Upload zip file"/>
+        <scp file="${build.dir}/${project.name}_v${project.version.major}-${project.version.minor}-${project.version.patch}.zip" todir="${ssh.username}@${ssh.uploadpath}" password="${ssh.pass}" trust="yes"/>
+        <echo message="publish-addon: Upload update.xml"/>
+        <scp file="update.xml" todir="${ssh.username}@${ssh.uploadpath}" password="${ssh.pass}" trust="yes"/>
+    </target>
+
+</project>

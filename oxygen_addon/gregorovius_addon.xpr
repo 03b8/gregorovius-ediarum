@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="20.1">
+    <meta>
+        <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options>
+            <serialized version="20.1" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>author.format.compatibility</String>
+                        <Integer>2</Integer>
+                    </entry>
+                    <entry>
+                        <String>binary.file.patterns</String>
+                        <String>*.ttf,*.eot,*.woff*,*.otf,*.webm,*.pdf,*.doc,*.eps,*.exe,*.dll,.DS_Store,Thumbs.db,*.icns,*.so,*.sys,*.avi,*.swf,*.fla,*.mp3,*.m4a,*.mpa,*.mp4,*.mpg,*.mpeg,*.wmv,*.qt,*.vob,*.wav,*.flv,*.class,*.chm,*.epub,*.mobi,*.zip,*.jar,*.docx,*.dotx,*.dotm,*.ods,*.odp,*.odt,*.ott,*.rar,*.tar,*.tar.gz,*.o,*.a,*.ai,*.gif,*.jpg,*.jpeg,*.png,*.bmp,*.tif,*.tiff,*.html</String>
+                    </entry>
+                    <entry>
+                        <String>document.types</String>
+                        <documentTypeDescriptor-array/>
+                    </entry>
+                    <entry>
+                        <String>extensions.update.sites</String>
+                        <String-array>
+                            <String>http://telota.bbaw.de/ediarum/gregorovius/edit/update.xml</String>
+                            <String>http://telota.bbaw.de/ediarum/basis/edit/update.xml</String>
+                            <String>http://telota.bbaw.de/ediarum/register/edit/update.xml</String>
+                        </String-array>
+                    </entry>
+                    <entry>
+                        <String>key.author.editor.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.custom.editor.variables.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.document.type.association.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.extensions.update.site.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.external.tools.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.file.types.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.new.topics.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.perspectives.layout.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>new.dita.topic.use.file.name.for.root.id</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>perspectives.layout.info</String>
+                        <perspectivesInfo>
+                            <field name="useFixedLayout">
+                                <Boolean>true</Boolean>
+                            </field>
+                            <field name="predefinedLayout">
+                                <Boolean>false</Boolean>
+                            </field>
+                            <field name="predefinedLayoutName">
+                                <String>Advanced</String>
+                            </field>
+                            <field name="specifiedLayoutPath">
+                                <String>${frameworkDir(ediarum.GREGOROVIUS.edit)}/gregorovius.layout</String>
+                            </field>
+                        </perspectivesInfo>
+                    </entry>
+                    <entry>
+                        <String>user.defined.editor.variables</String>
+                        <userEditorVariable-array>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_image_directory}</String>
+                                </field>
+                                <field name="value">
+                                    <String>Zeichnungen</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_index_bibl}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/oxygen/ediarum.xql?index=bibliography</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_index_person}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/oxygen/ediarum.xql?index=persons</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_index_place}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/oxygen/ediarum.xql?index=places</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_project_domain}</String>
+                                </field>
+                                <field name="value">
+                                    <String>https://oxygen-bot:aM3z8kslJSKkI5bMNVhutxlzB7JY7fur@xmledit.bbaw.de/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String>Domain incl. credentials</String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_project_name}</String>
+                                </field>
+                                <field name="value">
+                                    <String>gregorovius</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_projects_directory}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/ediarum/rest/db/projects/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_manual_url}</String>
+                                </field>
+                                <field name="value">
+                                    <String>http://telota.bbaw.de/ediarum/edit/manual/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String>URL zum Handbuch</String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_index_org}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/oxygen/ediarum.xql?index=organisations</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_getGeoname}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/oxygen/getGeoname.xql</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_website_base}</String>
+                                </field>
+                                <field name="value">
+                                    <String>https://website-user:Yjwy0yvXbK78Whutcl0mclkUgRptGW7p@xmledit.bbaw.de</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_website_person}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/personen/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_website_place}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/orte/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_website_org}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/koerperschaften/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_website_path}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/ediarum/apps/gregorovius.WEB</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_website_homepage}</String>
+                                </field>
+                                <field name="value">
+                                    <String>${ediarum_website_base}/${ediarum_website_path}/briefe/${xpath_eval(/TEI/@xml:id)}</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_website_bibl}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/literatur/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_index_letters}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/oxygen/ediarum.xql?index=letters</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                        </userEditorVariable-array>
+                    </entry>
+                    <entry>
+                        <String>validation.scenarios</String>
+                        <validationScenario-array/>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
+    </meta>
+    <projectTree name="gregorovius_addon.xpr"/>
+</project>

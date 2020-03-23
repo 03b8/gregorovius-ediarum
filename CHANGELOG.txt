@@ -1,0 +1,189 @@
+Berlin-Brandenburgische Akademie der Wissenschaften
+TELOTA - The electronic Life of the Academy
+
+ediarum
+Digitale Arbeitsumgebung für das Akademienvorhaben
+http://www.bbaw.de/telota/software/ediarum
+
+--------------------------------------------------------------------------------
+
+CHANGELOG
+
+0.5.22 vom 8.10.2019
+    * [oxy] Support @type in bibl for work indices
+
+0.5.21 vom 10.09.2019
+    * [oxy] Add index action for inserting persName in existing person
+
+0.5.20 vom 05.09.2019
+    * [oxy] Fix person name templates for person index
+
+0.5.19 vom 30.8.2019
+    * [oxy] Add new @type values for place in index and display w/ CSS
+
+0.5.18 vom 15.8.2019
+    * [oxy] Add person name templates to person index
+    * [web] UI facelift for frontend
+
+0.5.17 vom 11.7.2019
+    * [oxy] CSS reads all values from @rendition flexibly
+    * [oxy] date[@notBefore] and date[@notAfter] can be displayed individually
+
+0.5.16 vom 11.7.2019
+    * [oxy] Change encoding for en and em dash actions
+
+0.5.15 vom 11.7.2019
+    * [oxy] Adapted action for special letters and added action for quotation marks
+
+0.5.14 vom 28.6.2019
+    * [oxy] Insertion place for list labels set to first child node of item
+    * [web] Styling of lists improved to allow for more flexibility and readability
+
+0.5.13 vom 19.06.2019
+    * [oxy] Permit more than one idno in person (person index)
+    
+0.5.12 vom 21.05.2019
+    * [oxy] Add action for metamark[used] with note
+    * [web] Improve display of marginalia in letter view
+
+0.5.11 vom 14.05.2019
+    * [oxy] Further bugfix for namespace error
+
+0.5.10 vom 14.05.2019
+    * [oxy] Bugfix for namespace error (removed namespace prefixes in action and CSS)
+
+0.5.9 vom 14.05.2019
+    * [oxy] Hotfix for CSS
+    * [oxy] Removed old metamark action from menus
+
+0.5.8 vom 14.05.2019
+    * [oxy] Metamark/add marginalia support linking to text segments
+    * [oxy] Metamark/add marginalia show @hand names from index
+    * [oxy] Underlining by recipient supported
+
+0.5.7 vom 08.05.2019
+    * [oxy] Updated letter template
+    * [oxy] Saved toolbar layout in Windows
+    * [oxy] Added attachment action to toolbar
+
+0.5.6 vom 22.03.2019
+    * [oxy] Fix project layout configuration in oXygen (#11621)
+
+0.5.5 vom 06.03.2019
+    * [oxy] Adapt actions and view for aggr. elements (#11621)
+
+0.5.4 vom 28.02.2019
+    * [web] Add page footer (#11208)
+
+0.5.3 vom 26.02.2019
+    * [oxy] Add oXygen action for <p> coupling (#11256)
+    * [oxy] Configure author mode for p/(@rendition,@place) (#11256)
+    * [oxy] Add rotation in @rendition & add @place in <p> (#11256)
+    * [web] Configure view to show relations (#11474)
+    * [web] Refactor XPath for better performance
+    * [web] Move incipit formatting from config file to XSLT (#11247)
+    * [web] Move config file, reconfigure incipit (#11247)
+
+0.5.2 vom 24.01.2019
+    * [oxy] Restructure editorial comment display in author mode (#10668)
+    * [oxy] Add actions gregorovius_signed and gregorovius_salute (#10990)
+    * [oxy] Implement <label> insertion and display in <list> (#11245)
+    * [oxy] Restructure letter attachment insertion (#11367)
+    * [oxy] Remove merge conflict remnants (#11330)
+
+0.5.1 vom 15.01.2018
+    * FEATURE #11261: [oxy] Add new actions for add/note with metamark
+    * FEATURE #11244: [oxy] Add new action for linking letters to attachments (#11244)
+    * BUGFIX #11174: [web] Make path to leaflet-widget.js relative
+    * FEATURE #11161: [web] Add popovers for comments (using Popper.js)
+
+0.5.0 vom 12.12.2018
+    * CHANGE #11049: [oxy] Disambiguate action for pb
+    * BUGFIX #10937: [oxy] Set up weblinks in author mode
+    * CHANGE #11009: [web] Set up basic frontend design, clean up web app directory
+    * CHANGE #10690: [web] Set up basic letter view
+
+0.4.4 vom 13.11.2018
+    * BUGFIX #11048: Change formatting option at insertion in Author mode
+
+0.4.3 vom 08.11.2018
+    * TASK #10937: Add editor vars for website to oXygen fw
+    * TASK #10937: Configure new CSS for displaying links
+    * TASK #10791: [WEB] Rectify page title
+    * TASK #10791: [WEB] Insert linebreak btw. recipient names
+    * TASK #10791: [WEB] Normalize space for name labels in API
+    * BUG #11010: Add editor var for getGeoname.xql
+    * BUG #11008: Add index sorting XSLT stylesheet
+    * FEATURE #10934: Color code persName/@cert
+    * BUG #10892: Add second parameter to expand-links()
+    * BUG #10863: Change setting for doc ID generation
+    * BUG #10863: Add ID variable to letter template
+
+0.4.2 vom 18.10.2018
+    * FEATURE #10871: Add action "gregorovius_space"
+    * FEATURE #10867: Add visual mark to choice[corr|reg]
+    * BUG #10868: Add Italian to action "foreign"
+    * TASK #10866: Add missing addon update URLs
+    * FEATURE #10869: Add action for note aggregation
+
+0.4.1 vom 17.10.2018
+    * BUGFIX #10864: Replace path w/ editor variable in correspAction[@type="received"]_placeName
+
+0.4.0 vom 16.10.2018
+    * BUGFIX #10834: Rectify missing element in stylesheet (orgName|persName:before)
+    * TASK #10824: Style indexed entities
+    * TASK #10819: Modify pb insertion rules
+    * FEATURE #10782: Add action to add linked salutes
+    * FEATURE #10786: Add text alignment action for PS
+    * BUG #10802: Flexibilize action "note_1" (insertion of note)
+    * TASK #10753: Change placeholder for physDesc
+    * FEATURE #10781: Change style for <ex> (blue)
+    * TASK #10785: Change action name for "supplied"
+    * TASK #10656: Fix framework compatibility Fixes framework compatibility w/ ediarum.BASE 1.0.0
+    * TASK #10790: Adapt style for letter metadata
+    * TASK #10789: Refactor CSS snippet
+    * FEATURE #10690: [WEB] Develop basic view for letters
+
+0.3.5 vom 13.09.2018
+    * CHANGE #10665: Ummodellierung des Postskriptums in <note>, Anpassung der Autor-Ansicht für Postskripta und Elemente mit @place Werten
+    * CHANGE #10664: (Flexiblere) Umbenennung der Aktion "Anmerkung des Autors"
+    * BUG #10655: Pfad in Aktion (Vermerk vH einer Person aus Register) mit Editorvariable ersetzt
+    * FEATURE #10643: Neue Aktion zum Verweisen auf mehrere Titel aus Literaturregister (gleichzeitig)
+
+0.3.4 vom 28.08.2018
+    * FEATURE #10517: Anpassung von ediarum.REGISTER für projektspezifisches Literaturregister
+    * FEATURE #10559: Aktualisierung des Pfads bei Werktitel-Aktion
+    * FEATURE #10560: Einrichtung der Schnittstelle fürs Literaturegister
+    * CHANGE #10588: Umschaltung der Aktion für die Auflösung der Abkürzungen (jetzt 'kursive' Ausschreibung mit ex), macht #10312 rückgängig
+
+0.3.3 vom 01.08.2018
+    * FEATURE #10488: Neue Aktion zur Hinzufügung eines physDesc unter //witness/msDesc[@type="copy"]
+
+0.3.2 vom 31.07.2018
+    * BUGFIX #10484: Entfernen von versehentlich hinzugefügten Aktionen in Symbolleiste
+
+0.3.1 vom 31.07.2018
+    * FEATURE #10483: Nummerierung der Abschrift- und Drucknachweise i. Autor-Modus angepasst u. verbessert
+
+0.3.0 vom 10.07.2018
+    * FEATURE #10106: Validierung des Datums bei oxy_datePicker deaktivieren
+    * FEATURE #10329: Layout der Symbolleiste anpassen
+    * BUGFIX #10331: Schema durch fehlende gap Attribute ergänzt
+    * BUGFIX #10330: Schema durch availability ergänzt
+    * BUGFIX #10312: Aktion z. Auflösung d. Abkürzungen i. Menü u. Symbolleiste korrigiert
+
+0.2.1 vom 27.06.2018
+    * FEATURE #10261: Anpassung des Brieftemplates (salute in closer eingefügt, leere Kontext-Elemente entfernt)
+
+0.2.0 vom 19.06.2018
+    * FEATURE #10108: oXygen-Aktion für die Bestimmung der Textausrichtung hinzugefügt
+    * FEATURE #10108: Geringfügige Anpassungen des Brieftemplates
+    * BUGFIX #10113: Editorvariablen angepasst, Funktionalität der Register berichtigt
+    * BUGFIX #10211: Vereinheitlichung des Layouts der Werkzeugleiste
+
+    0.1.0 vom 26.04.2018:
+    * FEATURE #9870: Anpassung des Renderings im Autor-Modus (teiHeader-Bereich), inkl. Ausblendeoptionen für //correspDesc und //editor + //respStmt
+    * BUGFIX #9903: Nummerierung der Drucknachweise im Autor-Modus
+    * FEATURE #9914: Redesign der Sachkommentarfunktion im Autor-Modus (in Pop-up statt Fließtext)
+    * FEATURE #9927: Sprachenauswahl für //foreign (fremdsprachige Textabschnitte) durch Italienisch ergänzt
+    * FEATURE #9934: Projektspezifisches Brieftemplate

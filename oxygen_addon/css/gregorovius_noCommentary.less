@@ -1,0 +1,18 @@
+/* Farbige Kennzeichnung der Sachkommentare samt Pop-ups ausblenden */
+
+text seg {
+	note, 
+	note:hover, 
+	note:focus, 
+	orig, 
+	orig:hover ~ note, 
+	orig:focus ~ note 
+	{
+		content: none;
+		background-color: none;
+	}
+}
+
+text seg note {
+	display: none;
+}

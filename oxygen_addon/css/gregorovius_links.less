@@ -1,0 +1,55 @@
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+@namespace telota "http://www.telota.de";
+@import "${framework(ediarum.BASE.edit)}/css/links.css";
+text note[hand]:after, text add[hand]:after {
+    content: url('gfx/note_hand.gif');
+    link: oxy_url('${ediarum_website_base}',
+    '${ediarum_website_path}${ediarum_website_person}') oxy_replace(attr(hand), '#', '');
+}
+
+abstract index[indexName='persons']:before,
+text index[indexName='persons']:before {
+    link: oxy_url('${ediarum_website_base}',
+    '${ediarum_website_path}${ediarum_website_person}') attr(corresp) + "/index.html";
+}
+
+abstract index[indexName='places']:before,
+text index[indexName='places']:before {
+    link: oxy_url('${ediarum_website_base}',
+    '${ediarum_website_path}${ediarum_website_place}') attr(corresp) + "/index.html";
+}
+
+abstract index[indexName='bibl']:before,
+text index[indexName='bibl']:before {
+    link: oxy_url('${ediarum_website_base}',
+    '${ediarum_website_path}${ediarum_website_bibl}') attr(corresp) + "/index.html";
+}
+
+rs[type='person'][key]:after,
+persName[key]:after {
+    -oxy-link: oxy_url('${ediarum_website_base}',
+    '${ediarum_website_path}${ediarum_website_person}') attr(key) + "/index.html";
+}
+
+rs[type='org'][key]:after,
+orgName[key]:after {
+    link: oxy_url('${ediarum_website_base}',
+    '${ediarum_website_path}${ediarum_website_org}') attr(key) + "/index.html";
+}
+
+rs[type='place'][key]:after,
+placeName[key]:after {
+    link: oxy_url('${ediarum_website_base}',
+    '${ediarum_website_path}${ediarum_website_place}') attr(key) + "/index.html";
+}
+
+rs[type='bibl'][sameAs]:after,
+bibl[sameAs]:after {
+    link: oxy_url('${ediarum_website_base}',
+    '${ediarum_website_path}${ediarum_website_bibl}') attr(sameAs) + "/index.html";
+}
+
+rs[type='term'][key]:after {
+    link: oxy_url('${ediarum_website_base}',
+    '${ediarum_website_path}${ediarum_website_item}') attr(key) + "/index.html";
+}

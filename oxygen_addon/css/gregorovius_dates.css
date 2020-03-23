@@ -1,0 +1,20 @@
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+/* nur Abweichungen */
+
+text date {
+    background-color: #FFDEA5;
+    -oxy-display-tags: none;
+}
+
+text date[when]:after {
+    content: oxy_editor(type,datePicker,edit,'@when',format,'yyyy-MM-dd');
+}
+
+text date[from]:after {
+    content: oxy_editor(type,datePicker,edit,'@from',format,'yyyy-MM-dd') " bis " oxy_editor(type,datePicker,edit,'@to',format,'yyyy-MM-dd');   
+}
+
+text date[notBefore]:after {
+    content: "Nicht vor" oxy_editor(type,datePicker,edit,'@notBefore',format,'yyyy-MM-dd') " und nicht nach " oxy_editor(type,datePicker,edit,'@notAfter',format,'yyyy-MM-dd');   
+}

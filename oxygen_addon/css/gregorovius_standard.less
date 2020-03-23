@@ -1,0 +1,614 @@
+﻿@namespace xml "http://www.w3.org/XML/1998/namespace";
+@namespace telota "http://www.telota.de";
+
+@import "${framework(ediarum.BASE.edit)}/css/standard.css";
+
+/* correspDesc temp. Ergänzung */
+
+correspAction[type="sent"] {
+    orgName:before {
+        content: "Sender: ";
+    }
+}
+correspAction[type="received"] {
+    orgName:before {
+        content: "Empfänger: ";
+    }
+}
+
+
+/* Literaturhinweise */
+
+text {
+	bibl, persName, placeName, orgName {
+		color: #184281;
+	}
+
+	bibl {
+		&:hover {
+			content: url('gfx/ref_werke.png');
+		}
+	}
+
+	persName {
+		&:hover {
+			content: url('gfx/persName.png');
+		}
+	}
+
+	placeName {
+		&:hover {
+			content: url('gfx/placeName.png');
+		}
+	}
+
+	orgName {
+		&:hover {
+			content: url('gfx/orgName.png');
+		}
+	}
+}
+
+/* Auflösung v. Abkürzungen */
+
+text ex {
+	color: #133fd1;
+}
+
+/* Postskriptum */
+
+note[type="postscript"] {
+    -oxy-placeholder-content: "[hier Postskriptum eingeben]";
+	background-color: none;
+	display: block;
+}
+
+note:before, note:focus:before, note:hover:before, add:before, hi:hover::after, hi:focus::after,
+note:hover::after, salute:hover::after, add:hover::after {
+    font-size: 10pt;
+    font-family: BBAWfont-italic;
+    color: gray;
+    vertical-align: middle;
+}
+
+note[place="mTop"]:before {
+    -oxy-append-content: "aoR";
+}
+
+note[place="right"]:before add[place="right"]:before {
+    -oxy-append-content: "arR";
+}
+
+note[place="mBottom"]:before {
+    -oxy-append-content: "auR";
+}
+
+note[rendition~="#v"]:before {
+    -oxy-append-content: " vertikal";
+}
+
+note[hand="#addressee"]:focus:before, add[hand="#addressee"]:focus:before {
+    content: oxy_xpath('concat("vdH ", string-join(for-each(//correspAction[@type="received"]//persName, function($a){substring-before($a, ", ")}), " & "))');
+    -oxy-append-content: oxy_xpath('string-join(//correspAction[@type="received"]//orgName, " & ")');
+}
+
+note[hand="#author"]:focus:before, add[hand="#author"]:focus:before {
+	-oxy-append-content: " vdH Autor";
+}
+
+note[hand="#unknown"]:focus:before, add[hand="#unknown"]:focus:before {
+    -oxy-append-content: " vdH Unbekannt";
+}
+
+hi[hand="#addressee"]:focus::after {
+    content: oxy_xpath('concat("vdH ", string-join(for-each(//correspAction[@type="received"]//persName, function($a){substring-before($a, ", ")}), " & "))');
+    -oxy-append-content: oxy_xpath('string-join(//correspAction[@type="received"]//orgName, " & ")');
+}
+
+add[hand]:not([hand="#addressee"]):not([hand="#author"]):not([hand="#unknown"]):focus:before,
+note[hand]:not([hand="#addressee"]):not([hand="#author"]):not([hand="#unknown"]):focus:before {
+    content: oxy_xpath('doc("../Register/Personen.xml")//person[@xml:id="${xpath_eval(substring-after(@hand, "#"))}"]/persName/surname/string()');
+    -oxy-prepend-content: "vdH ";
+}
+
+note[rendition~="#right"] {
+	text-align: right;
+}
+
+
+/* Datumseingabe*/
+
+correspDesc date[when],
+profileDesc creation date[when] {
+    content: oxy_editor(type,datePicker,edit,'@when',format,'yyyy-MM-dd',validateInput,false);
+}
+
+correspDesc date[from],
+profileDesc creation date[from] {
+    content: oxy_editor(type,datePicker,edit,'@from',format,'yyyy-MM-dd') " bis " oxy_editor(type,datePicker,edit,'@to',format,'yyyy-MM-dd',validateInput,false);
+}
+
+correspDesc date[notBefore],
+profileDesc creation date[notBefore] {
+    content: "nicht vor " oxy_editor(type,datePicker,edit,'@notBefore',format,'yyyy-MM-dd') " ";
+    -oxy-display-tags: none;
+}
+
+correspDesc date[notAfter],
+profileDesc creation date[notBefore] {
+    -oxy-append-content: "nicht nach " oxy_editor(type,datePicker,edit,'@notAfter',format,'yyyy-MM-dd',validateInput,false);
+    -oxy-display-tags: none;
+}
+
+
+/* Textausrichtung */
+
+text {
+	p {
+		text-align: left;
+	}
+	p[rendition~="#c"] {
+		text-align: center;
+	}
+	p[rendition~="#right"] {
+		text-align: right;
+	}
+}
+
+opener {
+	dateline, salute {
+		text-align: left;
+	}
+}
+
+closer {
+	dateline, salute {
+		text-align: left;
+	}
+}
+
+salute, dateline, signed, note {
+	text-align: left;
+}
+
+salute[rendition~="#c"], dateline[rendition~="#c"], signed[rendition~="#c"], note[rendition~="#c"] {
+	text-align: center;
+}
+
+salute[rendition~="#right"], dateline[rendition~="#right"], signed[rendition~="#right"], note[rendition~="#right"] {
+	text-align: right;
+}
+
+
+/* Sachanmerkung */
+seg note {
+	display: none;
+}
+
+text seg {
+	note:focus,
+	note:has(*:focus),
+	*:focus ~ note {
+		display: block;
+		border: 1px solid #b60999;
+		padding: 1em 0.5em 1em 0.5em;
+		margin: 1em 0.5em 1em 0.5em;
+		font-family: "BBAWfont";
+		font-size: 17px;
+		font-style: normal;
+		color: #000000;
+		background-color: #f3f1eb;
+		-oxy-placeholder-content: "[Sachanmerkung hier eingeben]";
+	}
+}
+
+/*
+
+text seg note {
+	content: none;
+	-oxy-show-placeholder: no;
+	visibility: -oxy-collapse-text;
+	background-color: #CC73D1;
+	white-space: pre-wrap;
+	padding-right: 0px;
+}
+
+text seg note:hover,
+text seg note:focus,
+text seg orig:hover ~ note,
+text seg orig:focus ~ note {
+	content: oxy_textArea(
+	    edit, '#content',
+	    contentType, 'text/xml'
+	    rows, 3
+	    columns, 40);
+	visibility: -oxy-collapse-text;
+	white-space: pre-wrap;
+	padding-right: 0px;
+}
+
+text seg orig {
+	background-color: #E2DAE3;
+}
+
+*/
+
+
+
+/* Nummerierung der Druck- und Abschriftnachweise */
+
+listWit {
+	counter-reset: druck;
+	counter-reset: abschrift;
+}
+
+sourceDesc witness:has(bibl[type="print"]) {
+	counter-increment: druck;
+	content: "D" counter(druck) ": ";
+	bibl {
+		-oxy-placeholder-content: "[Hier Drucknachweis eingeben]";
+	}
+}
+
+sourceDesc witness:has(msDesc[type="copy"]) msDesc[type="copy"] {
+	    counter-increment: abschrift;
+	    content: "h" counter(abschrift) ": ";
+	    -oxy-display-tags: none;
+}
+
+sourceDesc witness>bibl {
+    content: none;
+    -oxy-display-tags: none;
+}
+
+sourceDesc witness:nth-child(n)>bibl {
+    content: none;
+}
+
+/* Abstände im Header */
+
+physDesc {
+	padding: 0 0 1em 1em;
+	margin-top: 0;
+}
+
+
+/* Trennlinien */
+
+physDesc {
+	border-top: none;
+	border-bottom: none;
+}
+
+
+/* Mehrsprachige Regeste */
+
+profileDesc {
+
+	abstract:before {
+		display: block;
+		content: "Regest";
+		font-weight: bold;
+	}
+
+	abstract p[xml|lang="de"]:before {
+		content: "Deutsch: ";
+		font-style: normal;
+	}
+
+	abstract p[xml|lang="de"] {
+		display: block;
+		-oxy-placeholder-content: "[Hier Regest eingeben]";
+		-oxy-show-placeholder: always;
+	}
+
+	abstract p[xml|lang="it"]:before {
+		content: "Italienisch: ";
+		font-style: normal;
+	}
+
+	abstract p[xml|lang="it"] {
+		display: block;
+		-oxy-placeholder-content: "[Hier Regest eingeben]";
+		-oxy-show-placeholder: always;
+	}
+
+	abstract p[xml|lang="en"]:before {
+		content: "Englisch: ";
+		font-style: normal;
+	}
+
+	abstract p[xml|lang="en"] {
+		display: block;
+		-oxy-placeholder-content: "[Hier Regest eingeben]";
+		-oxy-show-placeholder: always;
+	}
+}
+
+/* Überlieferung */
+
+sourceDesc msDesc institution:after,
+sourceDesc msDesc repository:after,
+sourceDesc msDesc collection:after{
+    content: " / ";
+}
+
+sourceDesc {
+    msDesc {
+        content: "H: ";
+        physDesc:before {
+            content: None;
+		}
+		physDesc p:nth-child(1) {
+			-oxy-placeholder-content: "[Hier Format sowie ggf. Beschriftung, Adresse, Postvermerke, Eingangs- bzw. Beantwortungsvermerke]";
+		}
+		physDesc p:nth-child(2) {
+			-oxy-placeholder-content: "[Beilagen]";
+			-oxy-prepend-content: "Beilagen: ";
+			ref {
+				-oxy-display-tags : none ;
+				border-bottom-width : 1px ;
+				border-bottom-style : dashed ;
+				border-bottom-color : blue;
+			}
+		}
+        idno {
+            -oxy-placeholder-content: "[Hier ggf. Signatur eintragen]";
+        }
+        institution {
+            -oxy-placeholder-content: "[Hier aufbewahrende Institution eintragen]";
+            -oxy-show-placeholder: always;
+        }
+        repository {
+            -oxy-placeholder-content: "[Hier Aufbewahrungsstätte (repository) eintragen]";
+            -oxy-show-placeholder: always;
+        }
+        collection {
+            -oxy-placeholder-content: "[Hier ggf. Sammlung eintragen]";
+            -oxy-show-placeholder: always;
+        }
+    }
+}
+
+/* Mehrteilige Grußformeln/PS im Briefschluss */
+
+closer {
+	note[xml|id="n1"]:hover::after, salute[xml|id="s1"]:hover::after {
+		-oxy-append-content: "Teil 1";
+	}
+
+	note[xml|id="n2"]:hover::after, salute[xml|id="s2"]:hover::after {
+		-oxy-append-content: "Teil 2";
+	}
+
+	note[xml|id="n3"]:hover::after, salute[xml|id="s3"]:hover::after {
+		-oxy-append-content: "Teil 3";
+	}
+
+	note[xml|id="n4"]:hover::after, salute[xml|id="s4"]:hover::after {
+		-oxy-append-content: "Teil 4";
+	}
+
+	note[xml|id="n5"]:hover::after, salute[xml|id="s5"]:hover::after {
+		-oxy-append-content: "Teil 5";
+	}
+
+	note[xml|id="n6"]:hover::after, salute[xml|id="s6"]:hover::after {
+		-oxy-append-content: "Teil 6";
+	}
+
+	note[xml|id="n7"]:hover::after, salute[xml|id="s7"]:hover::after {
+		-oxy-append-content: "Teil 7";
+	}
+
+	note[xml|id="n8"]:hover::after, salute[xml|id="s8"]:hover::after {
+		-oxy-append-content: "Teil 8";
+	}
+
+	note[xml|id="n9"]:hover::after, salute[xml|id="s9"]:hover::after {
+		-oxy-append-content: "Teil 9";
+	}
+}
+
+/* Korrektur und Normalisierung */
+
+choice {
+	& > corr:hover::after {
+		-oxy-append-content: "K";
+		font-size: 10pt;
+		font-family: BBAWfont-italic;
+		color: red;
+		vertical-align: middle;
+	}
+	& > reg:hover::after {
+		-oxy-append-content: "N";
+		font-size: 10pt;
+		font-family: BBAWfont-italic;
+		color: blue;
+		vertical-align: middle;
+	}
+
+}
+
+/* Empfängerangabe mit niedriger Wahrscheinlichkeit */
+
+correspAction persName[cert="low"] {
+	color: #835b11;
+	&:hover::after {
+		-oxy-append-content: " ?";
+	}
+}
+
+/* Anstreichung mit Anmerkung */
+
+/*
+p:has(note metamark[rendition~="#mMM"]) {
+	border-left-width : 3px ;
+	border-left-style : solid ;
+	border-left-color : black ;
+	padding-left : 0.5em ;
+}
+
+p:has(add metamark[rendition~="#mMM"]) {
+	border-left-width : 3px ;
+	border-left-style : solid ;
+	border-left-color : black ;
+	padding-left : 0.5em ;
+}
+*/
+
+add metamark[function],
+note metamark[function] {
+	display: none;
+}
+
+text note:has(metamark[function]) {
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	-oxy-placeholder-content: "[Anmerkung eingeben]";
+	padding: 0px 4px 0px 4px;
+	margin: 0px 4px 0px 4px;
+}
+
+text note[place="left"]:has(metamark[function="done"]),
+text add[place="left"]:has(metamark[function="done"]) {
+	content: " ✔◀ ";
+}
+
+text note[place="right"]:has(metamark[function="done"]),
+text add[place="right"]:has(metamark[function="done"]) {
+	content: " ▶✔ ";
+}
+
+text note[place="left"]:has(metamark[function="used"]), 
+text add[place="left"]:has(metamark[function="used"]) {
+	content: " |◀ ";
+    vertical-align: middle;
+}
+
+text note[place="right"]:has(metamark[function="used"]), 
+text add[place="right"]:has(metamark[function="used"]) {
+	content: " ▶| ";
+    vertical-align: middle;
+}
+
+note:has(metamark[function="used"]):before, 
+note:has(metamark[function="done"]):before, 
+text add:has(metamark[function="used"]), 
+text add:has(metamark[function="done"]) {
+	-oxy-show-placeholder: no;
+	color: black;
+	font-size: large;
+	background-color: lightgray;
+	padding-top: -2px;
+	margin-right: 2px;
+}
+
+
+/* Listen mit <label> */
+
+text list {
+	margin-bottom: 1em;
+	label {
+		-oxy-display-tags: none;
+		display: inline;
+		padding: 0px 6px 0px 6px;
+		margin-right: 6px;
+		border: 1px solid #ececec;
+	}
+	item {
+		display: inline;
+	}
+}
+
+/* Absatzfortsetzungen / gekoppelte <p> */
+
+text {
+    p[next] {
+        margin-bottom: 0px;
+    }
+    p[prev]:before {
+        -oxy-append-content: "[ Fortsetzung ";
+        font-size: 10pt;
+        font-family: BBAWfont-italic;
+        color: gray;
+        vertical-align: middle;
+
+    }
+
+    signed:before, salute:before {
+        font-size: 10pt;
+        font-family: BBAWfont-italic;
+        color: gray;
+        vertical-align: middle;
+    }
+
+    signed[place="left"]:before,
+    salute[place="left"]:before,
+    p[place="left"]:before {
+        -oxy-append-content: "alR ";
+    }
+
+    signed[place="mTop"]:before,
+    salute[place="mTop"]:before,
+    p[place="mTop"]:before {
+        -oxy-append-content: "aoR ";
+    }
+
+    signed[place="right"]:before,
+    salute[place="right"]:before,
+    p[place="right"]:before {
+        -oxy-append-content: "arR ";
+    }
+
+    signed[place="mBottom"]:before,
+    salute[place="mBottom"]:before,
+    p[place="mBottom"]:before {
+        -oxy-append-content: "auR ";
+    }
+
+    note[rendition~="#rotate90"]:before,
+    signed[rendition~="#rotate90"]:before,
+    salute[rendition~="#rotate90"]:before,
+    p[rendition~="#rotate90"]:before {
+        -oxy-append-content: " 90° ";
+    }
+
+    note[rendition~="#rotate180"]:before,
+    signed[rendition~="#rotate180"]:before,
+    salute[rendition~="#rotate180"]:before,
+    p[rendition~="#rotate180"]:before {
+        -oxy-append-content: " 180° ";
+    }
+
+    note[rendition~="#rotate270"]:before,
+    signed[rendition~="#rotate270"]:before,
+    salute[rendition~="#rotate270"]:before,
+    p[rendition~="#rotate270"]:before {
+        -oxy-append-content: " 270° ";
+    }
+
+    p[place]:before {
+        -oxy-append-content: "] ";
+    }
+}
+
+/* Textsegmente (für Anstreichungen) */
+
+seg[xml|id] {
+	background-color: #eeeeee;
+}
+
+seg > del {
+    background-color: inherit;
+}
+
+text list item {
+	display: block;
+}
+
+/* Vorgedruckt */
+p[rendition~='#mPrint'] {
+  font-family : "Biolinum" , Helvetica , Arial , Sans ;
+}
