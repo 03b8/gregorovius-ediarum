@@ -150,7 +150,7 @@
                                 <String>Basic</String>
                             </field>
                             <field name="specifiedLayoutPath">
-                                <String>/home/costea/development/ediarum_gregorovius/oxygen_addon/gregorovius-provisorisch.layout</String>
+                                <String>/home/costea/development/ediarum_gregorovius/oxygen_addon/gregorovius.layout</String>
                             </field>
                         </perspectivesInfo>
                     </entry>
