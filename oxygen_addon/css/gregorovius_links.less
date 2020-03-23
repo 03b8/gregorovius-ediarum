@@ -27,29 +27,33 @@ text index[indexName='bibl']:before {
 
 rs[type='person'][key]:after,
 persName[key]:after {
-    -oxy-link: oxy_url('${ediarum_website_base}',
-    '${ediarum_website_path}${ediarum_website_person}') attr(key) + "/index.html";
+    -oxy-link: oxy_url('${ediarum_website_base}${ediarum_website_person}/') attr(key);
 }
 
 rs[type='org'][key]:after,
 orgName[key]:after {
-    link: oxy_url('${ediarum_website_base}',
-    '${ediarum_website_path}${ediarum_website_org}') attr(key) + "/index.html";
+    -oxy-link: oxy_url('${ediarum_website_base}${ediarum_website_person}/') attr(key);
 }
 
 rs[type='place'][key]:after,
 placeName[key]:after {
-    link: oxy_url('${ediarum_website_base}',
-    '${ediarum_website_path}${ediarum_website_place}') attr(key) + "/index.html";
+    -oxy-link: oxy_url('${ediarum_website_base}${ediarum_website_place}/') attr(key);
 }
 
 rs[type='bibl'][sameAs]:after,
 bibl[sameAs]:after {
-    link: oxy_url('${ediarum_website_base}',
-    '${ediarum_website_path}${ediarum_website_bibl}') attr(sameAs) + "/index.html";
+    -oxy-link: oxy_url('${ediarum_website_base}${ediarum_website_bibl}/') attr(sameAs);
+}
+
+bibl[corresp]:after {
+    -oxy-link: oxy_url('${ediarum_website_base}/works-multiple?ids=') oxy_replace(attr(corresp), ' ', ',');
 }
 
 rs[type='term'][key]:after {
     link: oxy_url('${ediarum_website_base}',
     '${ediarum_website_path}${ediarum_website_item}') attr(key) + "/index.html";
+}
+
+text ref[target]:after {
+    link: oxy_url('${ediarum_website_base}/letters/') attr(target);
 }

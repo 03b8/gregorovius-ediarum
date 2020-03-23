@@ -3110,7 +3110,7 @@ or ancestor-or-self::p[parent::physDesc]</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>161</Integer>
+											<Integer>165</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -3268,7 +3268,7 @@ or ancestor-or-self::p[parent::physDesc]</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>162</Integer>
+											<Integer>166</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -3418,7 +3418,7 @@ or ancestor-or-self::p[parent::physDesc]</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>163</Integer>
+											<Integer>167</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -3546,7 +3546,7 @@ or ancestor-or-self::p[parent::physDesc]</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>164</Integer>
+											<Integer>168</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -3618,7 +3618,7 @@ or ancestor-or-self::p[parent::physDesc]</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>165</Integer>
+											<Integer>169</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -3707,7 +3707,7 @@ or ancestor-or-self::notesStmt/note</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>166</Integer>
+											<Integer>170</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -3770,7 +3770,7 @@ hand</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>167</Integer>
+											<Integer>171</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -3844,7 +3844,7 @@ hand</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>168</Integer>
+											<Integer>172</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -3946,7 +3946,7 @@ hand</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>169</Integer>
+											<Integer>173</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4040,7 +4040,7 @@ hand</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>170</Integer>
+											<Integer>174</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4106,7 +4106,7 @@ gregorovius_salute_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>171</Integer>
+											<Integer>175</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4180,7 +4180,7 @@ gregorovius_salute_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>172</Integer>
+											<Integer>176</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4254,7 +4254,7 @@ gregorovius_salute_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>173</Integer>
+											<Integer>177</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4328,7 +4328,7 @@ gregorovius_salute_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>174</Integer>
+											<Integer>178</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4402,7 +4402,7 @@ gregorovius_salute_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>175</Integer>
+											<Integer>179</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4520,7 +4520,7 @@ gregorovius_salute_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>176</Integer>
+											<Integer>180</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4692,7 +4692,7 @@ gregorovius_salute_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>177</Integer>
+											<Integer>181</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4758,7 +4758,7 @@ gregorovius_note_ps_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>178</Integer>
+											<Integer>182</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4832,7 +4832,7 @@ gregorovius_note_ps_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>179</Integer>
+											<Integer>183</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4906,7 +4906,7 @@ gregorovius_note_ps_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>180</Integer>
+											<Integer>184</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -4980,7 +4980,7 @@ gregorovius_note_ps_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>181</Integer>
+											<Integer>185</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5054,7 +5054,7 @@ gregorovius_note_ps_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>182</Integer>
+											<Integer>186</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5132,7 +5132,7 @@ gregorovius_note_ps_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>183</Integer>
+											<Integer>187</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5198,7 +5198,7 @@ gregorovius_note_ps_agg_1c</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>184</Integer>
+											<Integer>188</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5265,7 +5265,7 @@ gregorovius_@rendition_mMM</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>185</Integer>
+											<Integer>189</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5332,7 +5332,7 @@ gregorovius_@rendition_mMM</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>186</Integer>
+											<Integer>190</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5398,7 +5398,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>187</Integer>
+											<Integer>191</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5460,7 +5460,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>188</Integer>
+											<Integer>192</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5526,7 +5526,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>189</Integer>
+											<Integer>193</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5592,7 +5592,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>190</Integer>
+											<Integer>194</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5658,7 +5658,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>191</Integer>
+											<Integer>195</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5728,7 +5728,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>192</Integer>
+											<Integer>196</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -5798,7 +5798,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>193</Integer>
+											<Integer>197</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6031,7 +6031,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>194</Integer>
+											<Integer>198</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6117,7 +6117,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>195</Integer>
+											<Integer>199</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6187,7 +6187,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>196</Integer>
+											<Integer>200</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6257,7 +6257,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>197</Integer>
+											<Integer>201</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6319,7 +6319,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>198</Integer>
+											<Integer>202</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6381,7 +6381,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>199</Integer>
+											<Integer>203</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6450,7 +6450,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>200</Integer>
+											<Integer>204</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6524,7 +6524,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>201</Integer>
+											<Integer>205</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6598,7 +6598,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>202</Integer>
+											<Integer>206</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6672,7 +6672,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>203</Integer>
+											<Integer>207</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6746,7 +6746,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>204</Integer>
+											<Integer>208</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6816,7 +6816,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>205</Integer>
+											<Integer>209</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6886,7 +6886,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>206</Integer>
+											<Integer>210</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6980,7 +6980,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>207</Integer>
+											<Integer>211</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -7098,7 +7098,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>208</Integer>
+											<Integer>212</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -7160,7 +7160,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>209</Integer>
+											<Integer>213</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -7222,7 +7222,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>210</Integer>
+											<Integer>214</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -7292,7 +7292,7 @@ gregorovius_p_agg_3b
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>211</Integer>
+											<Integer>215</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -7358,7 +7358,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>212</Integer>
+											<Integer>216</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -7432,7 +7432,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>213</Integer>
+											<Integer>217</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -7513,7 +7513,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>214</Integer>
+											<Integer>218</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -7575,7 +7575,7 @@ gregorovius_@function_done</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>215</Integer>
+											<Integer>219</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -7616,6 +7616,92 @@ gregorovius_@function_done</String>
 															</field>
 															<field name="operationID">
 																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>220</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>gregorovius_ref</String>
+												</field>
+												<field name="name">
+													<String>Verweis auf Brief</String>
+												</field>
+												<field name="description">
+													<String>Verlinkung zu einem Brief anlegen</String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>self::p or self::note</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>${ediarum_project_domain}${ediarum_projects_directory}${ediarum_project_name}${ediarum_index_letters}</String>
+																	</entry>
+																	<entry>
+																		<String>element</String>
+																		<String>&lt;ref xmlns='http://www.tei-c.org/ns/1.0' target='$ITEMS'>&lt;/ref></String>
+																	</entry>
+																	<entry>
+																		<String>item rendering</String>
+																		<String>$XPATH{/span}</String>
+																	</entry>
+																	<entry>
+																		<String>item separator</String>
+																		<String> </String>
+																	</entry>
+																	<entry>
+																		<String>item variable</String>
+																		<String>$XPATH{@xml:id}</String>
+																	</entry>
+																	<entry>
+																		<String>namespaces</String>
+																		<String>tei:http://www.tei-c.org/ns/1.0</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//li</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.RegisterSurroundWithElementOperation</String>
 															</field>
 														</actionMode>
 													</actionMode-array>
@@ -8631,25 +8717,9 @@ gregorovius_@function_done</String>
 													<toolbarEntry-array>
 														<toolbarItem>
 															<field name="actionID">
-																<String>anchor</String>
+																<String>gregorovius_ref</String>
 															</field>
 														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>ref</String>
-															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>ref[note]</String>
-															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>ref[URL]</String>
-															</field>
-														</toolbarItem>
-														<toolbarSeparator/>
 														<toolbarItem>
 															<field name="actionID">
 																<String>gregorovius_ref[hasAttachement]</String>
@@ -21740,6 +21810,243 @@ or ancestor-or-self::list[@rendition='#et']</String>
 											<Boolean>true</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>revisionDesc[1]</String>
+										</field>
+										<field name="name">
+											<String>Bearbeitungshistorie hinzufügen</String>
+										</field>
+										<field name="description">
+											<String>Dokumentiert eine neue Bearbeitung des Dokuments</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>//revisionDesc</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;change xmlns="http://www.tei-c.org/ns/1.0" when="${date(yyyy-MM-dd)}" who="${ask('Kürzel Bearbeiter*in', editable_combobox, ('${author.name}':'${author.name}';), '${author.name}')}">&lt;/change></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>//listChange</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>Inside as first child</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>not(//revisionDesc)</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;revisionDesc xmlns="http://www.tei-c.org/ns/1.0">
+  &lt;listChange>
+    &lt;change when="${date(yyyy-MM-dd)}" who="${ask('Kürzel Bearbeiter*in', editable_combobox, ('${author.name}':'${author.name}';), '${author.name}')}">&lt;/change>
+  &lt;/listChange>
+&lt;/revisionDesc></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>//profileDesc</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>revisionDesc[2]</String>
+										</field>
+										<field name="name">
+											<String>change @who</String>
+										</field>
+										<field name="description">
+											<String>Setzt leeres @who auf "anonymus"</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::change[@who='']</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>elementLocation</String>
+																<String>ancestor-or-self::change[1]</String>
+															</entry>
+															<entry>
+																<String>name</String>
+																<String>who</String>
+															</entry>
+															<entry>
+																<String>value</String>
+																<String>anonymus</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ChangeAttributeOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>revisionDesc</String>
+										</field>
+										<field name="name">
+											<String>Bearbeitungshistorie hinzufügen</String>
+										</field>
+										<field name="description">
+											<String>Dokumentiert eine neue Bearbeitung des Dokuments</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>actionIDs</String>
+																<String>revisionDesc[1]
+revisionDesc[2]</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ExecuteMultipleActionsOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>revisionDesc[@status]</String>
+										</field>
+										<field name="name">
+											<String>Status hinzufügen oder ändern</String>
+										</field>
+										<field name="description">
+											<String>Status hinzufügen oder ändern</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::revisionDesc</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>elementLocation</String>
+																<String>ancestor-or-self::revisionDesc</String>
+															</entry>
+															<entry>
+																<String>name</String>
+																<String>status</String>
+															</entry>
+															<entry>
+																<String>value</String>
+																<String>${ask('Status', radio, ('draft':'Entwurf';'final':'Final';), 'draft')}</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ChangeAttributeOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -22455,6 +22762,34 @@ or ancestor-or-self::list[@rendition='#et']</String>
 																<String>notesStmt</String>
 															</field>
 														</menuItem>
+														<menu>
+															<field name="label">
+																<String>Revision und Status</String>
+															</field>
+															<field name="accessKey">
+																<String></String>
+															</field>
+															<field name="iconPath">
+																<String></String>
+															</field>
+															<field name="menuEntriesDescriptorList">
+																<menuEntry-array>
+																	<menuItem>
+																		<field name="actionID">
+																			<String>revisionDesc</String>
+																		</field>
+																	</menuItem>
+																	<menuItem>
+																		<field name="actionID">
+																			<String>revisionDesc[@status]</String>
+																		</field>
+																	</menuItem>
+																</menuEntry-array>
+															</field>
+															<field name="context">
+																<null/>
+															</field>
+														</menu>
 														<menuItem>
 															<field name="actionID">
 																<String>keyword</String>
