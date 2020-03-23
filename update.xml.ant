@@ -14,7 +14,9 @@
             <p>Entwickelt von TELOTA - The Electronic Life of the Academy; Berlin-Brendenburgische Akademie der Wissenschaften.</p>
             <h2>Neues in Version @VERSION@</h2>
             <ul>
-              <li>Typisierung für Einträge im Literaturregister wird jetzt vom Schema unterstützt</li>
+              <li>Indexierungen sind in Kommentaren möglich</li>
+              <li>Briefe können indexiert werden</li>
+              <li>Indexierungen führen zur neuen Webseite</li>
             </ul>
         </xt:description>
         <xt:license>
