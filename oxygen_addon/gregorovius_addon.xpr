@@ -18,27 +18,6 @@
                         <documentTypeDescriptor-array/>
                     </entry>
                     <entry>
-                        <String>document.types.order</String>
-                        <documentTypeEntry-array>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>4/gregorovius/ediarum_GREGOROVIUS_register.framework/ediarum.GREGOROVIUS.register</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>false</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>4/gregorovius/ediarum_GREGOROVIUS.framework/ediarum.GREGOROVIUS.edit</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>false</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                        </documentTypeEntry-array>
-                    </entry>
-                    <entry>
                         <String>extensions.update.sites</String>
                         <String-array>
                             <String>http://telota.bbaw.de/ediarum/gregorovius/edit/update.xml</String>
@@ -92,10 +71,10 @@
                                 <Boolean>false</Boolean>
                             </field>
                             <field name="predefinedLayoutName">
-                                <String>Advanced</String>
+                                <String></String>
                             </field>
                             <field name="specifiedLayoutPath">
-                                <String>${frameworkDir(ediarum.GREGOROVIUS.edit)}/gregorovius.layout</String>
+                                <String>/home/theo/Dev/ediarum_gregorovius/oxygen_addon/gregorovius.layout</String>
                             </field>
                         </perspectivesInfo>
                     </entry>
