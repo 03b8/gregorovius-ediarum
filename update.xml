@@ -3,8 +3,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.oxygenxml.com/ns/extension http://www.oxygenxml.com/ns/extension/extensions.xsd">
     <xt:extension id="gregorovius">
-        <xt:location href="gregorovius_v0-6-0.zip"/>
-        <xt:version>0.6.0</xt:version>
+        <xt:location href="gregorovius_v0-6-1.zip"/>
+        <xt:version>0.6.1</xt:version>
         <xt:oxy_version>20.1+</xt:oxy_version>
         <xt:type>framework</xt:type>
         <xt:author>TELOTA-Arbeitsgruppe (Stefan Dumont und Martin Fechner) an der Berlin-Brandenburgischen Akademie der Wissenschaften</xt:author>
@@ -12,11 +12,13 @@
         <xt:description xmlns="http://www.w3.org/1999/xhtml">
             <h1>Digitale Arbeitsumgebung für das Editionsprojekt Gregorovius</h1>
             <p>Entwickelt von TELOTA - The Electronic Life of the Academy; Berlin-Brendenburgische Akademie der Wissenschaften.</p>
-            <h2>Neues in Version 0.6.0</h2>
+            <h2>Neues in Version 0.6.1</h2>
             <ul>
-              <li>Indexierungen sind in Kommentaren möglich</li>
+              <li>Indizierungen sind in Kommentaren möglich</li>
               <li>Briefe können indexiert werden</li>
-              <li>Indexierungen führen zur neuen Webseite</li>
+              <li>Indizierungen führen zur neuen Webseite</li>
+              <li>Indizierungen sind in Kommentaren möglich</li>
+              <li>Publikationsstatus kann bestimmt werden</li>
             </ul>
         </xt:description>
         <xt:license>
