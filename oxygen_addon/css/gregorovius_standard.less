@@ -622,3 +622,35 @@ note ref {
     content: url('gfx/ref_black.png');
   }
 }
+
+publicationStmt {
+	display: block;
+	publisher, pubPlace, idno, licence {
+		display: none;
+	}
+	availability {
+		-oxy-display-tags: none;
+	}
+	availability[status]:before {
+	    content: ""
+		oxy_checkbox(
+		edit, "@status",
+		values, "free",
+		uncheckedValues, "restricted",
+		labels, "");
+	}
+	availability[status='free'] {
+	    color: green;
+	    &:after {
+		    content: "veröffentlicht";
+	    }
+        }
+	availability[status='restricted'] {
+	    color: red;
+	    &:after {
+		    content: "unveröffentlicht";
+	    }
+        }
+	margin-bottom: 1em;
+}
+
